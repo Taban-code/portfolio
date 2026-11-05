@@ -44,3 +44,7 @@
 .case-footer{padding:20px 0 28px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font:500 .6rem 'DM Mono',monospace;letter-spacing:.08em}
 @media(max-width:760px){.case-content{grid-template-columns:1fr;gap:25px}.case-sidebar{position:static;display:flex;flex-wrap:wrap;gap:0 18px}.case-sidebar p{width:100%}.case-meta{grid-template-columns:1fr 1fr}.case-art{margin-bottom:55px}.case-content{padding-bottom:65px}}
 @media(max-width:480px){.case-meta{grid-template-columns:1fr}.case-points{grid-template-columns:1fr}.case-hero{padding-top:55px}.case-intro{font-size:.98rem}.case-footer{flex-direction:column;gap:9px}}
+
+.case-art img{width:100%;height:100%;object-fit:cover;display:block}
+.case-art.study{background:#17212b}
+@media(max-width:760px){.case-art img{min-height:260px}}
