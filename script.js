@@ -20,7 +20,7 @@ form?.addEventListener('submit',event=>{
  if(!form.reportValidity())return;
  const data=new FormData(form);
  const subject=encodeURIComponent('Portfolio enquiry: '+data.get('subject'));
- const body=encodeURIComponent('Hello Taban,\n\n'+data.get('message')+'\n\nFrom: '+data.get('name')+'\nEmail: '+data.get('email'));
+ const body=encodeURIComponent('Hello Taban,\n\n'+data.get('message')+'\n\nProject type: '+data.get('subject')+'\nBudget: '+(data.get('budget')||'Not specified')+'\nTimeline: '+(data.get('timeline')||'Not specified')+'\n\nFrom: '+data.get('name')+'\nEmail: '+data.get('email'));
  const status=document.getElementById('form-status');
  if(status)status.textContent='Opening your email app…';
  window.location.href='mailto:tabansalimsaleh@gmail.com?subject='+subject+'&body='+body;
