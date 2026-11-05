@@ -1,0 +1,46 @@
+/* Case study pages — shared orange / charcoal portfolio system */
+.case-page{background:var(--bg)}
+.case-nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.case-back{font-size:.78rem;color:var(--muted)}
+.case-back:hover{color:var(--accent)}
+.case-hero{padding:75px 0 55px}
+.case-eyebrow{font:500 .67rem 'DM Mono',monospace;letter-spacing:.13em;color:var(--accent);text-transform:uppercase}
+.case-hero h1{font-size:clamp(3.2rem,8vw,7rem);line-height:.95;letter-spacing:-.085em;margin:22px 0}
+.case-hero h1 em{font:italic 400 1em Georgia;color:var(--accent)}
+.case-intro{max-width:720px;color:#d0d0d0;font-size:1.08rem;line-height:1.85}
+.case-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;border-block:1px solid var(--line);padding:22px 0;margin-top:42px}
+.case-meta div{display:flex;flex-direction:column;gap:6px}
+.case-meta small{font:500 .61rem 'DM Mono',monospace;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
+.case-meta strong{font-size:.87rem;font-weight:600}
+.case-art{height:clamp(260px,42vw,490px);position:relative;overflow:hidden;display:grid;place-items:center;margin:15px 0 90px;border:1px solid var(--line)}
+.case-art:after{content:"";position:absolute;inset:18px;border:1px solid #ffffff25;pointer-events:none}
+.case-art.cafe{background:radial-gradient(ellipse at 50% 40%,#81552b,#392819 48%,#171717 80%)}
+.case-art.scent{background:radial-gradient(ellipse at 50% 35%,#6a4b25,#292017 48%,#141414 85%)}
+.case-art-wordmark{text-align:center;position:relative;z-index:1;font-size:clamp(3rem,10vw,8rem);font-weight:800;line-height:.9;letter-spacing:-.09em;text-shadow:0 12px 45px #0008}
+.case-art-wordmark em{display:block;font:italic 400 1em Georgia;color:var(--accent);letter-spacing:-.05em}
+.case-art-note{position:absolute;bottom:34px;left:35px;z-index:2;font:500 .62rem 'DM Mono',monospace;letter-spacing:.13em;color:#eee}
+.case-art-index{position:absolute;top:35px;right:35px;z-index:2;font:500 .62rem 'DM Mono',monospace;letter-spacing:.1em;color:#eee}
+.case-content{display:grid;grid-template-columns:240px 1fr;gap:70px;padding-bottom:100px}
+.case-sidebar{position:sticky;top:110px;align-self:start}
+.case-sidebar p{font:500 .63rem 'DM Mono',monospace;letter-spacing:.12em;color:var(--accent);margin:0 0 14px}
+.case-sidebar a{display:block;color:var(--muted);font-size:.78rem;padding:7px 0}
+.case-sidebar a:hover{color:var(--text)}
+.case-main section{padding:0 0 52px;margin:0 0 48px;border-bottom:1px solid var(--line);scroll-margin-top:110px}
+.case-main h2{font-size:clamp(1.7rem,3vw,2.5rem);letter-spacing:-.06em;line-height:1.1;margin:0 0 18px}
+.case-main p{color:var(--muted);font-size:.91rem;line-height:1.9;margin:0 0 16px}
+.case-main p strong{color:var(--text);font-weight:700}
+.case-points{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:25px}
+.case-point{background:var(--panel);padding:20px;border:1px solid var(--line)}
+.case-point b{display:block;font-size:.88rem;margin-bottom:7px}
+.case-point span{font-size:.78rem;line-height:1.7;color:var(--muted)}
+.case-stack{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.case-stack span{border:1px solid var(--line);border-radius:99px;padding:8px 12px;font:500 .65rem 'DM Mono',monospace;color:#ddd}
+.case-note{padding:18px 20px;border-left:2px solid var(--accent);background:#ffa5000c;color:#c9c9c9;font-size:.82rem;line-height:1.8;margin-top:22px}
+.case-cta{padding:65px 0 85px;border-top:1px solid var(--line)}
+.case-cta h2{font-size:clamp(2.5rem,5vw,4.8rem);letter-spacing:-.08em;line-height:1.05;margin:0 0 25px}
+.case-cta h2 em{font:italic 400 1em Georgia;color:var(--accent)}
+.case-cta-actions{display:flex;gap:15px;flex-wrap:wrap}
+.case-cta .button-secondary{border:1px solid var(--line);color:var(--text);background:transparent}
+.case-footer{padding:20px 0 28px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font:500 .6rem 'DM Mono',monospace;letter-spacing:.08em}
+@media(max-width:760px){.case-content{grid-template-columns:1fr;gap:25px}.case-sidebar{position:static;display:flex;flex-wrap:wrap;gap:0 18px}.case-sidebar p{width:100%}.case-meta{grid-template-columns:1fr 1fr}.case-art{margin-bottom:55px}.case-content{padding-bottom:65px}}
+@media(max-width:480px){.case-meta{grid-template-columns:1fr}.case-points{grid-template-columns:1fr}.case-hero{padding-top:55px}.case-intro{font-size:.98rem}.case-footer{flex-direction:column;gap:9px}}
